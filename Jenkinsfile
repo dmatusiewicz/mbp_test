@@ -16,7 +16,7 @@ stage('My Conditional Stage') {
         branch 'master'
     }
     steps {
-        echo 'Do that only on master branch'
+        echo 'Do that only on master branchi!!!!!!!!!!!!!!!!'
     }
 }
 
