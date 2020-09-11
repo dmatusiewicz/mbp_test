@@ -12,7 +12,9 @@ pipeline {
             }
         }
         stage ('optional stage') {
-          when (BRANCH_NAME != 'develop') {
+          when {
+            env.BRANCH_NAME != 'develop'
+          }
             echo 'Skip - optional step'
           }
         }
