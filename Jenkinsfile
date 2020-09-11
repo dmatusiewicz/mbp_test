@@ -11,12 +11,14 @@ pipeline {
                 }
             }
         }
-        stage ('optional stage') {
-          when {
-            env.BRANCH_NAME != 'develop'
-          }
-            echo 'Skip - optional step'
-        }
+stage('My Conditional Stage') {
+    when {
+        branch 'master'
+    }
+    steps {
+        echo 'Do that only on master branch'
+    }
+}
 
     }
 }
