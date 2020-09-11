@@ -6,6 +6,7 @@ pipeline {
                 // log.info 'Starting' 
                 script { 
                     assumeRole()
+                    echo 'Branch name ' + env.BRANCH_NAME
 
                 }
             }
