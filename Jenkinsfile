@@ -11,5 +11,11 @@ pipeline {
                 }
             }
         }
+        stage ('optional stage') {
+          when (BRANCH_NAME != 'develop') {
+            echo 'Skip - optional step'
+          }
+        }
+
     }
 }
