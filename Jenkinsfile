@@ -16,7 +16,6 @@ pipeline {
             env.BRANCH_NAME != 'develop'
           }
             echo 'Skip - optional step'
-          }
         }
 
     }
